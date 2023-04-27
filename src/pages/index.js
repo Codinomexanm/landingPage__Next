@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Container from '@/components/Container'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,8 +17,7 @@ export default function Home() {
       </Head>
       <main>
         <h1>hello</h1>
-        <h2>deu certo
-        </h2>
+        <Container />
       </main>
     </>
   )

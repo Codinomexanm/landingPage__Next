@@ -2,9 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #1b2430;
-  padding: 20px 80px;
+  background: #1f1106;
+  padding: 3px 80px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+.imgs{
+  user-select: none;
+  pointer-events: none;
 }
 .bar{
   display: contents;
@@ -26,14 +30,14 @@
   color: #fff;
 }
 .navbars li a.active{
-  color:#17cf97
+  color:#e33236
 }
 .navbars li a.active::after{
   content: "";
   position: absolute;
   width: 50%;
   height: 2px;
-  background: #17cf97;
+  background: #e33236;
   bottom: 0;
   left: 25%;
 }
@@ -45,18 +49,16 @@
   left: 50%;
   width: 0;
   height: 2px;
-  background: #17cf97;
+  background: #e33236;
   transition: all ease-in-out 300ms;
 }
 .navbars a:hover{
-  color: #17cf97;
+  color: #e33236;
 }
 .navbars a:hover::after {
   left: 25%;
   width: 50%;
 }
-
-
 .mobile{
   display: none;
 }
