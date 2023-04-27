@@ -1,0 +1,24 @@
+.container__{
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  border: 1px solid transparent;
+  color: black;
+}
+.container__about{
+  margin: 0 auto;
+  border: 1px solid transparent;
+  width: 50%;
+}
+@media screen and (max-width: 780px) {
+  .container__{
+      display: flex;
+  }
+  .container__about{
+      margin: 10px;
+      width: 100%;
+      color: red;
+  }
+
+}
