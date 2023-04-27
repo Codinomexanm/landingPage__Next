@@ -2,13 +2,15 @@ import Link from 'next/link'
 import Image from 'next/image'
 import React, { useState } from 'react'
 import style from './style.module.css'
+import { FiMenu } from 'react-icons/fi'
+
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
   const [activeLink, setActiveLink] = useState('');
 
-  const handleClick = (link) => {
-    setActiveLink(link);
-    setClicked(false);
+  const handleClick = () => {
+    setClicked(!clicked);
+    alert("clicado")
   };
 
   return (
@@ -22,6 +24,10 @@ const Navbar = () => {
             <li><Link href="/contact" >contato</Link></li>
           </ul>
         </div>
+        <button id={style.mobile} onClick={handleClick} className={style.trashButton}>
+          <FiMenu id={style.bar}
+            size={28} color='#ea3140' />
+        </button>
       </nav>
     </>
   );
