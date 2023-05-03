@@ -1,0 +1,25 @@
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-row: auto;
+  gap: 30px;
+}
+@media screen and (max-width: 780px) {
+
+  .posts {
+    padding: 0;
+    overflow-y: hidden;
+    display: flex;
+    max-width: 100%;
+    width: 98vw;
+    height: 500px;
+    align-items: center;
+    gap: 15px;
+  }
+  .posts >.post:nth-child(1) {
+    margin-left: 10px;
+  }
+  .posts >.post:last-child {
+    margin-right: 10px;
+  }
+}

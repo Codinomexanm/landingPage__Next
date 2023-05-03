@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './style.module.css'
-
+import MapComponent from '../MapComponent'
+import Gallery from '../Galery'
 
 const Container = () => {
   return (
@@ -42,8 +43,14 @@ const Container = () => {
         <section id={style.transform_world1}>
         </section>
       </div>
-
-
+      <div className={style.gals}>
+        <Gallery />
+      </div>
+      <div className={style.xxt2}>
+        <div id={style.map}>
+          <MapComponent />
+        </div>
+      </div>
     </div>
   )
 }
