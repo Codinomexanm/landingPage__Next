@@ -1,17 +1,24 @@
-import NavBarMobile from './mobile'
-import NavbarDesktop from './desktop'
-import React from 'react';
-import { useMediaQuery } from 'react-responsive';
+import React, { useEffect, useState } from 'react';
+import NavBar from './NavBar';
+import NavBarMobile from './NavBarMobile';
 
-const Navbar = () => {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+const NavbarContainer = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <>
-      {isMobile ? <NavBarMobile /> : <NavbarDesktop />}
+      {isMobile ? <NavBarMobile /> : <NavBar />}
     </>
   );
 };
 
-export default Navbar;
-
+export default NavbarContainer;
