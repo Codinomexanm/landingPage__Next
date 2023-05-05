@@ -93,7 +93,7 @@
     transition: 0.3s ease-in-out;
     z-index: 98;
   }
-  .navbars.active{
+  .yes{
     right: 0px;
   }
   .navbars li{
