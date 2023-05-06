@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import NavBar from './NavBar';
-import NavBarMobile from './NavBarMobile';
+
+import NavbarDesktop from './desktop';
+import NavBarMobile from './mobile';
 
 const NavbarContainer = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -16,7 +17,7 @@ const NavbarContainer = () => {
 
   return (
     <>
-      {isMobile ? <NavBarMobile /> : <NavBar />}
+      {isMobile ? <NavBarMobile /> : <NavbarDesktop />}
     </>
   );
 };
