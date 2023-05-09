@@ -202,7 +202,7 @@ nav{
   z-index: 100;
   width: 100%;
   height: calc(var(--index)*10);
-  background-image: url('../../public/ground.png');
+  background-image: url("/ground.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -218,7 +218,7 @@ nav{
   z-index: 100;
   width: 100%;
   height: calc(var(--index)*10);
-  background-image: url('../../public/ground.png');
+  background-image: url("/ground.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -262,22 +262,21 @@ nav{
   transition: var(--transition);
 }
 .layer-base{
-  background-image: url('../../public/layer-base.png');
+  background-image: url("/layer-base.png");
   transform: translate3d(0,calc(var(--scrollTop)/1.6),0);
   z-index: 0;
 }
 .layer-mid{
-  background-image: url('../../public/layer-middle.png');
+  background-image: url("/layer-middle.png");
   transform: translate3d(0,calc(var(--scrollTop)/2.5),0);
-
 }
 .layer-front{
-  background-image: url('../../public/layer-front.png');
+  background-image: url("/layer-front.png");
   transform: translate3d(0,calc(var(--scrollTop)/5.6),0);
 
 }
 .article-main{
-  background-image: url('../../public/biblia.jpg');
+  background-image: url("/biblia.jpg");
 --mainarticle-transform:translate3d(0,calc(var(--scrollTop)/-7.6));
 min-height: 100vh;
 background-size: cover;
