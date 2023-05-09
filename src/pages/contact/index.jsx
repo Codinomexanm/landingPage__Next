@@ -1,6 +1,7 @@
 import style from './style.module.css'
 const Contact = () => {
   return (
+
     <div className={style.container__}>
       <div className={style.container__about}>
         <h2>Contato</h2>
