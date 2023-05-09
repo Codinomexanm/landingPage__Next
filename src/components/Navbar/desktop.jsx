@@ -16,7 +16,7 @@ const NavbarDesktop = () => {
   return (
     <>
       <nav className={style.navbar}>
-        <Link href="/"><Image src="/logo.png" alt="Descrição da imagem" width={90} height={90} className={style.imgs} /></Link>
+
         <div className={style.links}>
           <ul className={style.navbars}>
             <li><Link href="/" className={style.active}>Home</Link></li>
